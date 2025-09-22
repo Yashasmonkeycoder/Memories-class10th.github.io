@@ -1,0 +1,255 @@
+<!doctype html>
+<html >
+  <head >
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="animation.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style >
+      body{
+        margin: 0;
+      }
+      .swiffy-slider{
+        position: fixed;
+        left: 0;
+        top: 27%;
+        z-index: 50;
+        padding: 3px;
+        height: 43%;
+        border: solid white 5px;
+        border-radius: 15px;
+        background-color: white;
+      }
+      img{
+        border-radius: 15px;
+      }
+      button{
+        outline: none;
+      }
+      .bubbles{
+  z-index:10;
+}
+#thought{
+  position: fixed;
+  z-index: 50;
+  width: 90%;
+  left: 5%;
+  top: 85%;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  font-family: 'Varela Round';
+  color: white;
+  text-align: center;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-name: none;
+  display:none;
+}
+@keyframes pade{
+  0%{opacity:0%;}
+  100%{opacity: 100%;}
+}
+.head{
+  position: fixed;
+  top: 0;
+  width: 98%;
+  height: 2.2rem;
+  background-color: #1a1e23;
+  border: solid white 3px;
+  color: white;
+  font-size: 1.4em;
+  border-radius:0 0 18px 18px;
+  border-top: 0;
+  font-family: 'Varela Round';
+  padding-top: 0.5rem;
+  z-index: 9999;
+}
+.lader{
+  align-items: center;
+  background-color: #1D1F20;
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+#lader{
+  display: block;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: none;
+}
+@keyframes fade{
+  0%{opacity:100%}
+  100%{opacity:0%}
+}
+.loader  {
+  animation: rotate 1s infinite;  
+  height: 50px;
+  width: 50px;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 20px;  
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;  
+  background-color: #cb2025;
+  box-shadow: 30px 0 0 #f8b334;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite; 
+  background-color: #00a096;
+  box-shadow: 30px 0 0 #97bf0d;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #f8b334;
+  }
+  50% {
+    box-shadow: 0 0 0 #f8b334;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+  50% {
+    box-shadow: 0 0 0 #97bf0d;
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #97bf0d;
+    margin-top: 0;
+  }
+}
+ 
+    </style>
+  </head>
+  <body >
+    <div class="bubbles">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+<div class="head"><center>Class 10th Photo Gallery </center></div>
+    <div class="swiffy-slider slider-nav-autoplay slider-nav-visible" data-slider-nav-autoplay-interval="4500">
+    <ul class="slider-container">
+        <li><img src="https://i.postimg.cc/T1Wkxk7f/IMG-20230123-WA0000.jpg" style="width: 100%;height: 100%;"></li>
+                <li><img src="https://i.postimg.cc/LhKx8zwf/IMG-20230124-WA0000.jpg" style="width: 100%;height: 100%;"></li>        <li><img src="https://i.postimg.cc/521MPvy6/IMG-20230125-WA0000.jpg" style="width: 100%;height: 100%;"></li>     <li><img src="https://i.postimg.cc/JhzC8Lb8/IMG-20230128-WA0050.jpg" style="width: 100%;height: 100%;"></li>        <li><img src="https://i.postimg.cc/yNp4YbPZ/IMG-20230128-WA0057.jpg" style="width: 100%;height: 100%;"></li>        <li><img src="https://i.postimg.cc/YC3BT9L8/IMG-20230128-WA0063.jpg" style="width: 100%;height: 100%;"></li>        <li><img src="https://i.postimg.cc/TYft82Ww/IMG-20230203-201955.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/2jJyKG98/1675436295757.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/qRFJWBLZ/1675436381086.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/CKmLHsf0/1675436435591.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/SKTYNhdc/IMG-20230203-WA0000.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/Z5Ly23y7/IMG-20230203-WA0010.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/tgCVjT3X/IMG-20230203-WA0013.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/0yvwVZrK/IMG-20230203-WA0015.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/fTmd71Wh/IMG-20230203-WA0016.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/4dY7YS2q/IMG-20230203-WA0026.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/bJ4Gk9KJ/IMG-20230203-WA0027.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/rsWDJtk9/IMG-20230203-WA0037.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/02RMNZYX/IMG-20230203-WA0038.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/ZYyvZXdy/IMG-20230203-WA0043.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/q7RgFFrq/IMG-20230203-WA0050.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/zXCLHWpz/IMG-20230203-WA0060.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/vTRBcHVx/IMG-20230203-WA0061.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/zBHvzRV1/IMG-20230203-WA0062.jpg" style="width: 100%;height: 100%;"></li>
+                <li><img src="https://i.postimg.cc/zGpV0r94/IMG-20230203-WA0069.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/sxp2SdY6/IMG-20230203-WA0070.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/PfZJ0ZgW/IMG-20230203-WA0081.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/mDkZd1QH/IMG-20230203-204633.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/5NCydzD5/IMG-20230203-204841.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/rp8wrPsg/IMG-20230203-204953.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/6px393Nk/IMG-20230203-205313.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/y8hNWH1k/IMG-20230203-205338.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/6qGWKsb6/IMG-20230203-205410.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/hhWSPCNL/IMG-20230203-205506.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/sfB7xvtx/IMG-20230203-205537.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/wxSJm9pV/IMG-20230203-205607.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/4dt5KPdf/IMG-20230203-211227.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/k5LsXz7Y/IMG-20230203-211418.jpg" style="width: 100%;height: 100%;"></li><li><img src="https://i.postimg.cc/LsJvS2FZ/IMG-20230203-211449.jpg" style="width: 100%;height: 100%;"></li> </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+    <p id="thought">"Some memories are unforgettable, remaining ever vivid and heartwarming!"</p>
+    <div id="lader"><div class="lader"><div class="loader"></div></div></div>
+    <audio src="song.mp3" id="bgsong" controls autoplay hidden loop></audio>
+  </body>
+</html>
+<script >
+  function exec(){
+    var kk = document.getElementById("lader").style;
+    kk.animationName="fade";
+    setTimeout(kk.display="none",1000);
+  }
+  function eexc(){
+    document.getElementById("thought").style.animationName="pade";
+   document.getElementById("thought").style.display="block";
+  }
+  function plays(){
+    if(confirm("Do you want to play a song?")==true){let ding = new Audio('song.mp3');
+	ding.play();}}
+   setTimeout(function(){exec()},2000);
+   setTimeout(function(){eexc()},3000);
+</script>
